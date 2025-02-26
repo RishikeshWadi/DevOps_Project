@@ -12,7 +12,7 @@ In AWS, a user can be a person or a system entity that interacts with the AWS cl
 
 ## Activity Diagram
 
-![AD](CloudSecurityWithIAM/projectImages/CloudSecurity_AWS_IAM_Activity_Diagram.png)
+![AD](https://github.com/RishikeshWadi/DevOps_Project/blob/main/CloudSecurityWithIAM/projectImages/CloudSecurity_AWS_IAM_Activity_Diagram.png)
 
 
 ---
