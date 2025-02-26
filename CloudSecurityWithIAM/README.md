@@ -136,7 +136,7 @@ An **Account Alias** is a user-friendly name for your AWS account, making sign-i
 ### Steps to Create an Account Alias
 1. Go to the **IAM dashboard**.
 2. Click **Create** under **Account Alias**.
-3. Enter `alias-preferredName`.
+3. In the PreferredAlias field: Enter `alias-preferredName`.
 4. Click **Create alias**.
 
 ---
@@ -150,9 +150,12 @@ A **User Group** is a collection of users with shared permissions.
 An **IAM User** is an individual who accesses AWS resources.
 
 ### Steps to Create a User Group
+   •	Set up a dedicated IAM group for the user, so the permission can be managed from one place.
+   •	Set up a user, so users have a way to log in.
+
 1. In **IAM**, select **User Groups** → **Create Group**.
 2. **Name:** `dev-group`.
-3. Attach **DevEnvironmentPolicy**.
+3. Attach Permission Policies:  **DevEnvironmentPolicy**.
 4. Click **Create user group**.
 
 ### Steps to Create an IAM User
@@ -161,7 +164,7 @@ An **IAM User** is an individual who accesses AWS resources.
 3. Enable **AWS Management Console access**.
 4. Select **I want to create an IAM user**.
 5. Uncheck **Require password change at next sign-in**.
-6. Add user to `dev-group`.
+6. Add user to `dev-group`. (to set permissions for your user, simply add it to the user group we've created)
 7. Click **Next** → **Create user**.
 
 ✅ IAM user and user group setup complete!
@@ -178,7 +181,11 @@ An **IAM User** is an individual who accesses AWS resources.
 5. Verify restricted access:
    - Attempt to stop the **production instance**.
    - **Access denied** message should appear.
+   
+![](https://github.com/RishikeshWadi/DevOps_Project/blob/main/CloudSecurityWithIAM/projectImages/instance-stop-error.png)
+
 6. Attempt to stop the **development instance**.
    - **Success!** Instance should stop.
+![ ](https://github.com/RishikeshWadi/DevOps_Project/blob/main/CloudSecurityWithIAM/projectImages/dev-instance-stopped.png)
 
 ✅ You have successfully implemented **AWS IAM security best practices** with EC2 instances, IAM policies, user groups, and account aliasing! 🚀
