@@ -35,7 +35,8 @@ Amazon EC2 (Elastic Compute Cloud) provides virtual computing resources in the c
 6. Click **Add additional tags** → **Add new tag**:
    - **Key:** Env
    - **Value:** production
-![ ](CloudSecurityWithIAM/projectImages/EC2InstanceNameandTags.png)
+![ ](https://github.com/RishikeshWadi/DevOps_Project/blob/main/CloudSecurityWithIAM/projectImages/EC2InstanceNameandTags.png)
+
 💡 **Why create tags?**
 - Tags help organize AWS resources.
 - The **Env** tag labels instances as `production` or `development`.
@@ -59,6 +60,8 @@ Repeat the above steps with the following details:
 - **Name:** development-yourname
 - **Env:** development
 
+![ ](https://github.com/RishikeshWadi/DevOps_Project/blob/main/CloudSecurityWithIAM/projectImages/development-rishikesh-tag.png)
+
 ✅ You've successfully deployed **two EC2 instances** for production and development environments!
 
 ---
@@ -74,7 +77,7 @@ An IAM policy defines **who can do what** with AWS resources.
 ### Steps to Create IAM Policy
 1. Navigate to the **IAM Console**.
 2. Click **Policies** → **Create policy**.
-3. Switch to the **JSON** editor.
+3. Switch to the **JSON** editor. (. (we can create and edit AWS policies in the visual editor or JSON)
 4. Use the following policy:
 
 ```json
@@ -115,6 +118,8 @@ An IAM policy defines **who can do what** with AWS resources.
 - **Action:** Lists actions that the policy permits or denies. (e.g., `ec2:*` allows all EC2 actions).
 - **Resource:** Defines the AWS resources affected (`*` applies to all resources).
 - **Condition (Optional):** Adds specific conditions for when the policy is applied, such as allowing access only to instances tagged `Env=development`.
+
+![ ](https://github.com/RishikeshWadi/DevOps_Project/blob/main/CloudSecurityWithIAM/projectImages/development-policies-json.png)
 
 5. Click **Next**.
 6. Name the policy `DevEnvironmentPolicy`.
