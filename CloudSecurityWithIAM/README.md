@@ -12,7 +12,7 @@ In AWS, a user can be a person or a system entity that interacts with the AWS cl
 
 ## Activity Diagram
 
-![Alt text](images/your-image.png)
+![AD](CloudSecurityWithIAM/projectImages/CloudSecurity_AWS_IAM_Activity_Diagram.png)
 
 
 ---
@@ -35,7 +35,7 @@ Amazon EC2 (Elastic Compute Cloud) provides virtual computing resources in the c
 6. Click **Add additional tags** → **Add new tag**:
    - **Key:** Env
    - **Value:** production
-
+![ ](CloudSecurityWithIAM/projectImages/EC2InstanceNameandTags.png)
 💡 **Why create tags?**
 - Tags help organize AWS resources.
 - The **Env** tag labels instances as `production` or `development`.
